@@ -8,7 +8,7 @@ export default function configureStore (middlewares = []) {
     function mockStoreWithoutMiddleware () {
       let actions = []
       let listeners = []
-      let reducer = () => {}
+      let reducer = state => state
 
       const self = {
         getState () {
